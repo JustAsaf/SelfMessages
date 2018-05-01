@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_box"
+    tools:context="com.example.android.selfmessages.MessageDetails"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TableRow
+        android:layout_margin="20dp">
+        <TextView
+            android:text="@string/sender_name"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/sender_name_box"
+            tools:text="Sender name"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:text="@string/message_date"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/message_date_box"
+            tools:text="Message Date"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/message_box"
+            tools:text="Message"
+            android:textSize="20sp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/delete_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/delete_button"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="@string/delete_box" />
+
+        <Button
+            android:id="@+id/cancel_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/close_button"
+            android:text="@string/cancel"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </TableRow>
+
+</TableLayout>
